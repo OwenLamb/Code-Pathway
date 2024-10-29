@@ -1,0 +1,28 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#MainLogo {
+    width: 600px;
+    height: 600px;
+    background-image: url('../imgs/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 50px auto;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 50px;
+    
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
