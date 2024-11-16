@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Code Pathway</title>
+
+        <link rel="stylesheet" href="css/FinalLessonStyle.css">
+    </head>
+
+    <body>
+        <div id="MainLogo"></div>
+        <div class="container">
+            <p><b>Lesson 3: Introduction to Loops</b></p>
+
+            <p id="LessonPlan">   
+                In programming there are two main kinds of loops. A for loop and a while loop. A while loop will first check condition and if it's true
+                then run the code inside of it. Once it reaches the end it will check the condition again, loops can run infinitely so make sure it's able to 
+                exit when intended. For loops do the same steps except in python they are designed explicitly for iteration. Iterating through a list of values for example.
+            </p>
+
+            <p id="LessonPlan"> 
+                Here is an example of both a while and a for loop:
+            </p>
+
+            <div class="code-block">
+                <pre>
+whileIndex = 0
+
+while (whileIndex != 10):
+    whileIndex =+ 1
+    print("Hello")
+
+ListOfNames = ["Jack", "John", "Ron"]
+
+for (index in ListOfNames):
+    print(index)
+                </pre>
+            </div>
+
+            <p id="LessonPlan">
+                In the while loop the text Hello is printed 10 times. In the for loop each named is printed one after another starting with "Jack"
+            </p>
+
+            <p id="LessonPlan">
+            Loops are powerful tools for creating code that can go through each possible iteration easily.
+            </p>
+
+
+            <p><b>Lesson Quiz</b></p>
+            <p id="LessonPlan">Write a program that finds the 2nd largest number in the below array and prints it to the console.</p>
+            <div class="code-block">
+                <pre>
+intArr[10, 4, 5, 3, 112, 110, 0, 150]
+                </pre>
+            </div>
+            
+            <textarea id="UserCode">type here</textarea>
+            <button id="Submit">Submit</button>
+            <div id="AIResponse" class="hidden AITextBox"></div>
+            <button id="Continue" class="hidden">Continue</button>
+        </div>
+        
+        <script src="scripts/FinalLessonScript.js"></script>
+    </body>
+</html>

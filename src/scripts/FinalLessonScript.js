@@ -20,7 +20,7 @@ document.getElementById("Submit").addEventListener("click", function(){
 
 document.getElementById("Continue").addEventListener("click", function(){
     if(userQuizGrade){
-        window.location.href = 'Lesson3.html';
+        alert("You have completed the free trial!")
     } else {
         alert("You have not yet passed the quiz")
     }

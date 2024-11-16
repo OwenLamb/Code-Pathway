@@ -11,16 +11,80 @@
     <body>
         <div id="MainLogo"></div>
         <div class="container">
-            <p>Lesson 2 Introduction to </p>
-            <p id="LessonPlan">    
+            <p><b>Lesson 2: Introduction to Conditional Statements</b></p>
+
+            <p id="LessonPlan">   
+                In programming, conditional statements let you execute specific code based on certain conditions, adding dynamic behavior to your scripts. 
+                They allow your code to make decisions and respond differently depending on the situation. 
+                The basic structure in Python is an if statement, which checks whether a condition is True or False. 
             </p>
 
-            <p>Lesson Quiz</p>
-            <p id="LessonPlan">Can you  Example output below</p>
-            <p id="LessonPlan"></p>
-            <p id="LessonPlan"></p>
+            <p id="LessonPlan"> 
+                Here is an example:
+            </p>
+
+            <div class="code-block">
+                <pre>
+state = True
+
+if state == True:
+    print("Hello World")
+else:
+    print("No dice")
+                </pre>
+            </div>
+
+            <p id="LessonPlan">
+                In this code:
+            </p>
+            <ul id="LessonPlan">
+                <li>state is a boolean variable, which can be either True or False.</li>
+                <li>The if statement checks if state is True. If it is, the code inside the if block executes, printing "Hello World".</li>
+                <li>If state is False, the code inside the else block runs, printing "No dice".</li>
+            </ul>
+
+            <p id="LessonPlan">
+                You can use different conditions other than == (equals). There are <= less than or equal to, > greater than, etc. You can also add additional 
+                conditions with elif (short for "else if"), which checks another condition if the first one isn’t met. Here’s an example:
+            </p>
+
+            <div class="code-block">
+            <pre>
+state = False
+alternate_state = True
+
+if state == True:
+    print("Hello World")
+elif alternate_state == True:
+    print("Hello Universe")
+else:
+    print("No dice")
+            </pre>
+            </div>
+
+        <p id="LessonPlan">In this example:</p>
+        <ul id="LessonPlan">
+            <li>If state is True, it prints "Hello World".</li>
+            <li>If state is False but alternate_state is True, it prints "Hello Universe".</li>
+            <li>If both state and alternate_state are False, it prints "No dice".</li>
+        </ul>
+
+        <p id="LessonPlan">
+            Conditional statements are powerful tools for creating flexible and responsive code.
+        </p>
+
+
+            <p><b>Lesson Quiz</b></p>
+            <p id="LessonPlan">Write a program that checks if a variable "age" is:</p>
+            <ul id="LessonPlan">
+                <li>Less than 13: print "You are a child"</li>
+                <li>Between 13 and 19: print "You are a teenager"</li>
+                <li>20 or older: print "You are an adult"</li>
+            </ul>
             <textarea id="UserCode">type here</textarea>
             <button id="Submit">Submit</button>
+            <div id="AIResponse" class="hidden AITextBox"></div>
+            <button id="Continue" class="hidden">Continue</button>
         </div>
         
         <script src="scripts/Lesson2Script.js"></script>
