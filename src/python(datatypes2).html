@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(datatypes2).css">
+    <title>More Datatypes</title>
+</head>
+<body>
+    
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">More Datatypes:-</h1>
+      <br><br>
+      <p>
+        Lists:- <br>
+        Lists are used to store multiple items in a single variable. <br>
+        Lists are created using square brackets <br>
+        List items are ordered, changeable, and allow duplicate values. <br>
+        List items are indexed, the first item has index [0], the second item has index [1] etc. <br>
+        Since lists are indexed, lists can have items with the same value <br>
+        The list is changeable, meaning that we can change, add, and remove items in a list after it has been created. <br><br>
+        List items are indexed and you can access them by referring to the index number <br>
+        Negative indexing means start from the end <br>
+        -1 refers to the last item, -2 refers to the second last item etc. <br>
+        You can specify a range of indexes by specifying where to start and where to end the range. <br>
+        When specifying a range, the return value will be a new list with the specified items. <br>
+        To change the value of a specific item, refer to the index number <br>
+        To insert a new list item, without replacing any of the existing values, we can use the insert() method. <br>
+        The insert() method inserts an item at the specified index<br><br>
+
+        Looping through a list:- <br>
+        You can loop through the list items by using a for loop <br>
+        <textarea name="" id="" cols="80" rows="4">
+          thislist = ["apple", "banana", "cherry"]
+          for x in thislist:
+             print(x)
+        </textarea> <br><br>
+        You can also loop through the list items by referring to their index number. <br>
+        Use the range() and len() functions to create a suitable iterable. <br>
+        You can loop through the list items by using a while loop. <br> <br>
+        List Comprehensions:- <br>
+        List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list. <br>
+        <textarea name="" id="" cols="80" rows="4">
+          fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+          newlist = [x for x in fruits if "a" in x]
+          print(newlist)
+        </textarea><br><br>
+        Some list methods:- <br>
+        append(), insert(),pop(),index(),remove(),count(),reverese(),sort() <br><br><br>
+        Tuples:- <br>
+        Tuples are used to store multiple items in a single variable. <br>
+        A tuple is a collection which is ordered and unchangeable. <br>
+        Tuples are written with round brackets. <br>
+        Since they are unchangeable, there are not much operations that can be performed on tuples. <br><br>
+        The operations that are allowed are same as that of lists. <br>
+        Tuple Methods:- count(), index() <br><br>
+
+        Sets:- <br>
+        Sets are used to store multiple items in a single variable. <br>
+        A set is a collection which is unordered, unchangeable*, and unindexed. <br>
+        Sets are written with curly brackets.
+        * set items are unchangeable, but you can remove items and add new items. <br>
+        Sets are unordered, so you cannot be sure in which order the items will appear. <br>
+        Set Methods:- <br>
+        Some mathematical operations that can be performed on sets(mathematics), can also be used on set datatype with proper name. <br><br> 
+
+        Dictionary:- <br>
+        Dictionaries are used to store data values in key:value pairs. <br>
+        A dictionary is a collection which is ordered*, changeable and does not allow duplicates. <br>
+        Dictionaries are written with curly brackets, and have keys and values <br>
+        Dictionary items are ordered, changeable, and does not allow duplicates. <br>
+        Dictionary items are presented in key:value pairs, and can be referred to by using the key name. <br>
+        Some default methods like, <br>
+        clear(), <br>
+        fromkeys(), <br>
+        items(), <br>
+        setdefault(), etc..<br> 
+        
+      </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(datatypes).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../Python/python(operators).html">Next Topic</a></button>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>

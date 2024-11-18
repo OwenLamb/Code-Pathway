@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(looping).css">
+    <title>Looping</title>
+</head>
+<body>
+   
+
+  <!-- Columns -->
+  <div class="column"> 
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Looping</h1>
+      <br><br>
+      <p>
+        Looping is done in the same way as in other languages. <br><br>
+        Loops can execute a block of code as long as a specified condition is reached. <br>
+        Loops are handy because they save time, reduce errors, and they make code more readable. <br>
+        <br><br>
+        While Loop:- <br><br>
+        The while loop loops through a block of code as long as a specified condition is true <br>
+        Example:- <br>
+        <textarea name="" id="" cols="60" rows="6">
+          i = 1
+          while i < 6:
+            print(i)
+            i += 1
+        </textarea> <br><br>
+       Break Statement:- <br>
+       <textarea name="" id="" cols="50" rows="7">
+        i = 1
+        while i < 6:
+          print(i)
+          if i == 3:
+            break
+          i += 1
+       </textarea><br><br>
+       Break statement makes the control to exit the loop at i=3. <br><br>
+       There is no do-while supported by python. <br><br>
+       Continue Statement:- <br>
+       <textarea name="" id="" cols="60" rows="8">
+        i = 0
+        while i < 6:
+          i += 1
+          if i == 3:
+            continue
+          print(i)
+       </textarea><br><br>
+       Continues the next iteration when i=3; <br><br>
+       With the else statement we can run a block of code once when the condition no longer is true <br>
+       <textarea name="" id="" cols="60" rows="8">
+        i = 1
+        while i < 6:
+          print(i)
+          i += 1
+        else:
+          print("i is no longer less than 6")
+       </textarea><br><br>
+
+        For Loop:- <br><br>
+        A for loop is used for iterating over a sequence 
+        (that is either a list, a tuple, a dictionary, a set, or a string). <br>
+        This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. <br><br>
+
+        <textarea name="" id="" cols="80" rows="5">
+          fruits = ["apple", "banana", "cherry"]
+          for x in fruits:
+            print(x)
+        </textarea><br><br>
+        Similarly we can loop through a string or any other iterable. <br>
+        The for loop does not require an indexing variable to set beforehand. <br><br>
+        The range() Function <br>
+        To loop through a set of code a specified number of times, we can use the range() function. <br>
+        The range() function returns a sequence of numbers, starting from 0 by default, 
+        and increments by 1 (by default), and ends at a specified number. <br>
+
+        <textarea name="" id="" cols="50" rows="4">
+          for x in range(2, 30, 3):
+          print(x)
+        </textarea><br><br>
+        In the above example, it is equivalent to 'for(i=2;i&lt;30;i+=3)' in other languages.<br><br>
+       Rest all things like break, continue, pass, else in looping, nested loops are similar to while loops <br><br>
+    </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(conditionals).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../Python/python(arrays).html">Next Topic</a></button>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>

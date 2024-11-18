@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(arrays).css">
+    <title>Arrays</title>
+</head>
+<body>
+    
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Arrays</h1>
+      <br><br>
+      <p>
+        Python does not have built-in support for Arrays, but Python Lists can be used instead. <br>
+        Arrays are used to store multiple values in one single variable <br>
+        This page shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the NumPy library. <br><br>
+        An array can hold many values under a single name, and you can access the values by referring to an index number. <br><br>
+        
+        To declare an array:- <br>
+        cars = ["Ford", "Volvo", "BMW"]<br><br>
+
+        We have now declared a variable that holds an array of strings. <br> 
+
+        Array indexes start with 0: [0] is the first element. [1] is the second element, etc. <br><br>
+        Accessing and Changing Elements of Array:- <br><br>
+        You access an array element by referring to the index number. <br>
+        To change the value of a specific element, refer to the index number <br><br>
+        cars[0] = "Opel" <br><br>
+        
+        To find out how many elements an array has, use the length property as:<br>
+        x = len(cars)<br><br>
+
+        Loop through an array:- <br><br>
+        You can use the for in loop to loop through all the elements of an array.<br>
+        Syntax:- <br><br>
+        <textarea name="" id="" cols="50" rows="3">
+          for x in cars:
+             print(x)
+        </textarea><br><br>
+        Adding Array Elements <br>
+        You can use the append() method to add an element to an array. <br>
+        cars.append("Honda") <br>
+        Removing Array  <br>
+        You can use the pop() method to remove an element from the array. <br>
+        You can also use the remove() method to remove an element from the array. <br>
+        cars.remove("Volvo") <br>
+
+        There is also a "for-each" loop, which is used exclusively to loop through elements in an array <br><br>
+        Syntax:- <br>
+        <textarea name="" id="" cols="80" rows="4">
+            for (type variableName : arrayName) {
+                // code block to be executed
+              }
+        </textarea><br><br>
+        Example:- <br><br>
+        <textarea name="" id="" cols="80" rows="5">
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            for (String i : cars) {
+              System.out.println(i);
+            }
+        </textarea><br><br><br>
+        Multidimensional Arrays:- <br>
+        A multidimensional array is an array of arrays. <br><br>
+        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} }; <br><br>
+        myNumbers is now an array with two arrays as its elements. <br>
+        To access the elements of the myNumbers array, specify two indexes: one for the array, and one for the element inside that array. <br> 
+        This example accesses the third element (2) in the second array (1) of myNumbers <br>
+        <textarea name="" id="" cols="80" rows="5">
+            int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+            int x = myNumbers[1][2];
+            System.out.println(x); // Outputs 7
+        </textarea><br><br>
+        We can also use a for loop inside another for loop to get the elements of a two-dimensional array (we still have to point to the two indexes) <br><br>
+        <textarea name="" id="" cols="80" rows="8">
+            public class Main {
+                public static void main(String[] args) {
+                  int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+                  for (int i = 0; i < myNumbers.length; ++i) {
+                    for(int j = 0; j < myNumbers[i].length; ++j) {
+                      System.out.println(myNumbers[i][j]);
+                    }
+                  }
+                }
+              }
+        </textarea><br><br>
+    </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(looping).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../Python/python(functions).html">Next Topic</a></button>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>
