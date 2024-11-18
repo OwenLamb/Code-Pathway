@@ -1,0 +1,155 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+    color:Black;
+}
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.section-title span {
+	color: crimson;
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}
+
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+
+
+
+/* Columns */
+/* Create three unequal columns that floats next to each other */
+p {
+	color: white;
+	font-size: 2rem;
+	margin-top: 3px;
+	line-height: 2.5rem;
+	font-weight: 600;
+}
+.headings{
+    color: white;
+}
+.heading{
+    color:white;
+    font-size:30px;
+    padding-top: 30px;
+}
+.heading span{
+    font-size:20px;
+    font-weight:normal;
+}
+.column {
+    padding-top:40px;
+	width:100%;
+    background-color:black;
+	float:left;
+}
+.column.left{
+	padding:40px;
+	float:left;
+	width:20%;
+}
+.vl {
+    border-left: 3px solid crimson;
+    height: 250vh;
+  
+}
+.v2{
+    color: white;
+}
+/* Left and right column */
+/* Middle column */
+.column.middle {
+	width: 5%;
+	float:left;
+}
+.right{
+    padding-top: 20px;
+	padding-left:30px;
+}
+.column.right{
+	width:60%;
+	float:right;
+}
+.right p{
+    font-weight: 300;
+}
+/* Clear floats after the columns */
+/*End Columns */
+.nextbutton, .nextbutton1{
+    padding:20px 40px;
+    height: 60px;
+    background-color:crimson;
+    border:none;
+    font-size: large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.nextbutton1{
+    float:right;
+}
+.nextbutton a, .nextbutton1 a{
+    color:white;
+}
+.table1{
+    color:white;
+    font-size: 20px;
+    padding:20px;
+}
+.row1{
+    padding:40px;
+    text-align: center;
+}
+
+
