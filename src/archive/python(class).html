@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(class).css">
+    <title>Classes and Objects</title>
+</head>
+<body>
+   
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Classes and Objects</h1>
+      <br><br>
+      <p>
+        Python is an object oriented programming language. <br>
+        Almost everything in Python is an object, with its properties and methods. <br>
+        A Class is like an object constructor, or a "blueprint" for creating objects. <br><br>
+
+        Create a Class <br>
+        To create a class, use the keyword class <br>
+        class MyClass: <br>
+          x = 5 <br>
+          <br>
+          Create Object <br>
+          Now we can use the class named MyClass to create objects <br>
+          p1 = MyClass() <br>
+          print(p1.x)      <br><br>
+          
+          The __init__() Function <br>
+          The examples above are classes and objects in their simplest form, and are not really useful in real life applications. <br>
+          To understand the meaning of classes we have to understand the built-in __init__() function. <br>
+          All classes have a function called __init__(), which is always executed when the class is being initiated. <br>
+          Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created <br><br>
+      <textarea name="" id="" cols="60" rows="10">
+        class Person:
+          def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+        p1 = Person("John", 36)
+
+        print(p1.name)
+        print(p1.age)
+      </textarea><br><br>
+      The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class. <br>
+      It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class <br><br>
+      Since python is an object oriented language, we can have properties of OOPs like Polymorphism, Inheritance, Encapsulation and Abstraction similar to other programming languages. <br>
+      Scope of variables is also same as that of other languages. <br><br>
+    </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(module2).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../Python/python(more).html">Next Topic</a></button>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(functions).css">
+    <title>Functions</title>
+</head>
+<body>
+   
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">Functions</h1>
+      <br><br>
+      <p>
+        A function is a block of code which only runs when it is called. <br>
+        You can pass data, known as parameters, into a function. <br>
+        A function can return data as a result. <br>
+        Creating a Function <br>
+        In Python a function is defined using the def keyword: <br>
+        def my_function(): <br>
+          print("Hello from a function") <br>
+
+        Calling a function:- <br>
+        To call a function in Python, write the function's name followed by two parentheses () <br>
+        <textarea name="" id="" cols="60" rows="5">
+          def my_function():
+           print("Hello from a function")
+          my_function()
+        </textarea> <br><br>
+
+        Parameters and Arguments:- <br><br>
+        The terms parameter and argument can be used for the same thing: information that are passed into a function. <br>
+        From a function's perspective: <br> 
+        A parameter is the variable listed inside the parentheses in the function definition. <br>
+        An argument is the value that is sent to the function when it is called. <br>
+       <textarea name="" id="" cols="60" rows="10">
+        def my_function(fname):
+        print(fname + " Refsnes")
+      
+        my_function("Emil")
+        my_function("Tobias")
+        my_function("Linus")
+        </textarea> <br><br>
+        By default, a function must be called with the correct number of arguments. <br>
+        Meaning that if your function expects 2 arguments, 
+        you have to call the function with 2 arguments, not more, and not less. <br><br>
+        <textarea name="" id="" cols="80" rows="5">
+          def my_function(fname, lname):
+            print(fname + " " + lname)
+
+          my_function("Emil", "Refsnes")
+        </textarea> <br><br>
+        If you do not know how many arguments that will be passed into your function, 
+        add a * before the parameter name in the function definition. <br>
+        This way the function will receive a tuple of arguments, and can access the items accordingly <br>
+        We can also pass some default values. <br>
+        Apart from these there are also keyword arguments and arbitrary keyword arguments. <br><br>
+        We can pass lists through the functions as arguments. <br>
+        Recursion is supported by python with proper syntax and indentation. <br>
+        We can return values from a function. <br>
+        We can use pass statement also. <br><br>
+        
+        Lambda Function:- <br>
+        A lambda function is a small anonymous function. <br>
+        A lambda function can take any number of arguments, but can only have one expression. <br>
+        Syntax:- <br>
+        lambda arguments : expression <br>
+        It can take any number of arguments. <br>
+        <textarea name="" id="" cols="50" rows="3">
+          x = lambda a, b : a * b
+          print(x(5, 6))
+        </textarea><br><br>
+        Why Use Lambda Functions?
+        The power of lambda is better shown when you use them as an anonymous function inside another function. <br>
+        Say you have a function definition that takes one argument, 
+        and that argument will be multiplied with an unknown number. <br>
+        Use that function definition to make a function that always doubles or triples the number you send in <br>
+        <textarea name="" id="" cols="50" rows="9">
+          def myfunc(n):
+            return lambda a : a * n
+          mydoubler = myfunc(2)
+          mytripler = myfunc(3)
+          print(mydoubler(11))
+          print(mytripler(11))
+        </textarea><br><br>
+
+    </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(arrays).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+      <button class="nextbutton1"><a href="../Python/python(module1).html">Next Topic</a></button>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>

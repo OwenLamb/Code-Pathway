@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/python(matplot).css">
+    <title>MatPlotLib</title>
+</head>
+<body>
+    
+
+  <!-- Columns -->
+  <div class="column">
+    <div class="column left">
+      <h1 class="headings">All Topics</h1>
+      <ul>
+        <li><a href="../Python/python(datatypes).html" class="v2"><p>Data Types</p></a></li>
+        <li><a href="../Python/python(datatypes2).html" class="v2"><p>More Data Types</p></a></li>
+        <li><a href="../Python/python(operators).html" class="v2"><p>Operators</p></a></li>
+        <li><a href="../Python/python(conditionals).html" class="v2"><p>Conditionals</p></a></li>
+        <li><a href="../Python/python(looping).html" class="v2"><p>Looping</p></a></li>
+        <li><a href="../Python/python(arrays).html" class="v2"><p>Arrays</p></a></li>
+        <li><a href="../Python/python(functions).html" class="v2"><p>Functions</p></a></li>
+        <li><a href="../Python/python(module1).html" class="v2"><p>Modules - 1</p></a></li>
+        <li><a href="../Python/python(module2).html" class="v2"><p>Modules - 2</p></a></li>
+        <li><a href="../Python/python(class).html" class="v2"><p>Classes & Objects</p></a></li>
+        <li><a href="../Python/python(more).html" class="v2"><p>More from Python</p></a></li>
+        <li><a href="../Python/python(matplot).html" class="v2"><p>MatPlotLib</p></a></li>
+      </ul>
+    </div>
+    <div class="column middle">
+      <div class="vl"></div>
+    </div>
+      <div class="column right">
+      <h1 class="heading">MatPlotLib</h1>
+      <br><br>
+      <p>
+        Matplotlib is a low level graph plotting library in python that serves as a visualization utility. <br>
+        Most of the Matplotlib utilities lies under the pyplot submodule, and are usually imported under the plt alias <br>
+        Now the Pyplot package can be referred to as plt <br><br>
+        The plot() function is used to draw points (markers) in a diagram. <br>
+        By default, the plot() function draws a line from point to point. <br>
+        The function takes parameters for specifying points in the diagram. <br>
+        Parameter 1 is an array containing the points on the x-axis. <br>
+        Parameter 2 is an array containing the points on the y-axis. <br><br>
+        Draw a line in a diagram from position (1, 3) to (2, 8) then to (6, 1) and finally to position (8, 10) <br><br>
+        <textarea name="" id="" cols="60" rows="10">
+          import matplotlib.pyplot as plt
+          import numpy as np
+          
+          xpoints = np.array([1, 2, 6, 8])
+          ypoints = np.array([3, 8, 1, 10])
+          
+          plt.plot(xpoints, ypoints)
+          plt.show()
+        </textarea><br><br>
+        We can use any markers to mark at the points. <br>
+        plt.plot(ypoints, marker = '*') <br><br>
+
+        Labels:- <br>
+        <textarea name="" id="" cols="60" rows="11">
+          import numpy as np
+          import matplotlib.pyplot as plt
+          x = np.array([80, 85, 90, 95, 100, 105, 110, 115, 120, 125])
+          y = np.array([240, 250, 260, 270, 280, 290, 300, 310, 320, 330])
+          plt.plot(x, y)
+          plt.title("Sports Watch Data")
+          plt.xlabel("Average Pulse")
+          plt.ylabel("Calorie Burnage")
+          plt.show()
+        </textarea><br><br>
+
+        Not just drawing these lines through some points. <br>
+        We can draw various graphs like bar graphs, pie charts, histograms, Subplots, scatter plots etc.. <br><br>
+
+    </p>
+      <br><br>
+      <button class="nextbutton"><a href="../Python/python(more).html">Previous</a></button>
+      <div style="float:right;"> Hello</div>
+  </div>
+</div>
+    
+  <script src="../js/js.js"></script>
+</body>
+</html>
