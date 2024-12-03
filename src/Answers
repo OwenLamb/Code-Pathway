@@ -1,0 +1,45 @@
+#1:
+print("Hello World")
+print("Hello World")
+
+#2:
+age = 18
+
+if age < 13:
+    print("You are a child")
+elif 13 <= age <= 19:
+    print("You are a teenager")
+else:
+    print("You are an adult")
+
+#3:
+intArr = [10, 4, 5, 3, 112, 110, 0, 150]
+
+largest = 0
+SecLarge = 0
+for i in intArr:
+    if i > largest:
+        SecLarge = largest
+        largest = i
+    elif i > SecLarge and i != largest:
+        SecLarge = i
+print(SecLarge)
+
+#4:
+class Employee:
+    def __init__(self, name, age, job_position):
+        self.name = name
+        self.age = age
+        self.job_position = job_position
+
+employees = [
+    Employee("Sarah", 36, "Engineer"),
+    Employee("John", 42, "Accountant"),
+    Employee("Bob", 53, "Cashier")
+]
+
+def print_employee_names(employee_list):
+    for employee in employee_list:
+        print(employee.name)
+
+print_employee_names(employees)
