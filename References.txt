@@ -4,3 +4,5 @@ https://www.w3.org/Style/Examples/011/firstcss.en.html
 https://stackoverflow.com/questions/17565401/html-button-navigate-to-other-page-different-approaches
 
 https://www.w3schools.com/tags/tag_textarea.asp
+
+https://www.geeksforgeeks.org/pass-javascript-variables-to-python-in-flask/
